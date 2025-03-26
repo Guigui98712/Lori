@@ -1578,7 +1578,7 @@ form button:hover {
   justify-content: center;
   align-items: center;
   padding: 0px 50px;
-  gap: 100px;
+  gap: 200px;
   background: radial-gradient(circle, #e0e0e052 2px, transparent 2px),
               radial-gradient(circle, #e0e0e052 2px, transparent 2px);
   background-size: 20px 20px;
@@ -1591,6 +1591,8 @@ form button:hover {
   width: 650px;
   text-shadow: 1px 1px 0.2px rgba(101, 101, 101, 0.2);
   color: #555555;
+  letter-spacing: -0.5px;
+  margin-right: -90px;
 }
 
 .text-section2 {
@@ -2192,5 +2194,6 @@ body {
  
  . t i t u l o - s e c t i o n 3   {   m a r g i n - l e f t :   - 2 0 p x   ! i m p o r t a n t ;   } 
  
- . t i t u l o - c o n t a i n e r   {   m a r g i n - r i g h t :   0   ! i m p o r t a n t ;   }  
+ . t i t u l o - c o n t a i n e r   {   m a r g i n - r i g h t :   0   ! i m p o r t a n t ;   } 
+ 
  

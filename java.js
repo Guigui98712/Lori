@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p>Graduada pela Faculdade de Direito de Franca em 2018;</p>
         <p>Inscrita na OAB/MG: 198.809;</p>
         <p>Pós-Graduada em Direito Trabalhista e Previdenciário pela mesma instituição (FDF);</p>
-        <p>Pós-Graduanda em Direito do Ordenamento, Urbanismo e do Ambiente pela Faculdade de Direito da Universidade de Coimbra.</p>
+        <p>Pós-Graduada em Direito do Ordenamento, Urbanismo e do Ambiente pela Faculdade de Direito da Universidade de Coimbra.</p>
       `
     },
     sara: {

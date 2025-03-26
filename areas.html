@@ -68,23 +68,6 @@
   
     <!-- Área de detalhamento -->
     <div class="detalhamento-container">
-      <div class="detalhamento active" id="inicial">
-        <div class="texto-detalhamento">
-          <h2>Áreas de Atuação</h2>
-          <p class="text-areas">
-            No escritório Lopes Ribeiro Advocacia, dedicamos nossa expertise a oferecer soluções jurídicas completas e personalizadas, atendendo às necessidades de clientes em diversas áreas do Direito. Com uma equipe altamente qualificada e comprometida, atuamos de forma estratégica para garantir a defesa dos direitos e interesses de nossos clientes, sejam eles pessoas físicas ou jurídicas.
-          </p>
-          <p class="text-areas">
-            Nossa atuação abrange desde consultorias preventivas até a representação em processos judiciais e administrativos, sempre com foco na excelência e na eficiência. Acreditamos que o Direito é uma ferramenta essencial para a construção de uma sociedade mais justa e equilibrada, e é por isso que nos empenhamos em oferecer um atendimento transparente, ético e focado nos resultados.
-          </p>
-          <p class="text-areas">
-            Seja na esfera trabalhista, previdenciária, cível, ambiental, consumerista ou empresarial, nossa missão é proporcionar segurança jurídica e orientação clara, ajudando nossos clientes a superar desafios e alcançar seus objetivos com confiança. Conte conosco para ser seu parceiro jurídico em todas as etapas do processo.
-          </p>
-        </div>
-        <div class="imagem-detalhamento">
-          <img src="/img/Lopes Ribeiro - Logotipo-09.png" alt="Imagem Inicial" />
-        </div>
-      </div>
       <div class="detalhamento" id="trabalhista">
         <div class="texto-detalhamento">
           <h2>Trabalhista</h2>
@@ -259,6 +242,12 @@
     </div>
   </section>
   <script src="java.js"></script>
+  <script>
+    // Mostra a área trabalhista automaticamente ao carregar a página
+    document.addEventListener('DOMContentLoaded', function() {
+      showDetail('trabalhista');
+    });
+  </script>
   
 
 
