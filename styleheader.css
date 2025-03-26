@@ -1,0 +1,17 @@
+/* Resetando o fundo do header para vermelho nas páginas secundárias */
+.navbar.nav-secondary {
+  background-color: #751616 !important; /* Cor de fundo vermelha */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Garante que o navbar ficará acima do conteúdo */
+}
+
+
+
+
+/* Container principal */
+
+
+

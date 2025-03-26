@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="styleheader.css">
+</head>
+<body>
+
+  <!-- Novo header com id único para evitar conflito -->
+  <header lass="secondary-header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 nav-secondary" id="navPrincipal">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand1" href="index.html">
+          <img src="/img/Marca d'agua-082.PNG" alt="Logo">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navResponsiva" aria-controls="navResponsiva" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navResponsiva">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="areas.html">ÁREAS DE ATUAÇÃO</a></li>
+            <li class="nav-item"><a class="nav-link" href="quemsomos.html">QUEM SOMOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li>
+          </ul>
+          <div class="social-icons">
+            <div class="social-icon">
+              <a href="https://wa.me/034998189790" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/lopesribeiroadv/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <div class="container-quemsomos">
+    <h1 class="titulo-quemsomos">Quem Somos</h1>
+  </div>
+
+  <section class="section-sobre03">
+    <div>
+      <div class="titulo-container">
+        <p class="titulo-section3">Porque escolher nosso escritório</p>
+        <img src="/img/Marca d'agua-09.PNG" class="logo-pequeno" />
+      </div>
+      <div class="l3"></div>
+      <p class="text-pq">
+        No escritório <strong>Lopes Ribeiro Advocacia</strong>, dedicamos nossa expertise a oferecer soluções jurídicas completas e personalizadas, atendendo às necessidades de clientes em diversas áreas do Direito. Com uma equipe altamente qualificada e comprometida, atuamos de forma estratégica para garantir a defesa dos direitos e interesses de nossos clientes, sejam eles pessoas físicas ou jurídicas.
+      </p>
+      <p class="text-pq">
+        Nossa atuação abrange desde consultorias preventivas até a representação em processos judiciais e administrativos, sempre com foco na excelência e na eficiência. Acreditamos que o Direito é uma ferramenta essencial para a construção de uma sociedade mais justa e equilibrada, e é por isso que nos empenhamos em oferecer um atendimento transparente, ético e focado nos resultados.
+      </p>
+      <p class="text-pq">
+        Seja na esfera trabalhista, previdenciária, cível, ambiental, consumerista ou empresarial, nossa missão é proporcionar segurança jurídica e orientação clara, ajudando nossos clientes a superar desafios e alcançar seus objetivos com confiança. Conte conosco para ser seu parceiro jurídico em todas as etapas do processo.
+      </p>
+    </div>
+  </section>
+
+    <section class="section-sobre02">
+      <div>
+        <p class="titulo-section2">História</p>
+        <div class="l3"></div>
+        <p class="text-section2">Nosso escritório surgiu a partir de um ideal de pautarmos a atuação
+           profissional em valores de transparência, ética e comprometimento com a
+          especificidade de cada caso. Assim, possuíamos a missão de sermos
+          instrumento de justiça social, auxiliando nossos clientes em demandas judicias,
+          extrajudiciais e consultivas. Com sede na cidade de Sacramento/MG, mas
+          atuação em diversos estados brasileiros, visamos a constante expansão do
+          Lopes Ribeiro, para disseminarmos a excelência de nossos serviços.</p>
+      </div>
+      <img src="/img/duas 2.jpeg" class="sobre02" />
+    </section>
+
+  <section class="socias">
+  <h1 class="titulo-socias">Nossa Equipe</h1>
+  <div class="ebooks">
+    <div class="retangulo-socia">
+      <a href="#" class="foto-socia" data-socia="sara">
+        <img src="/img/sara.JPG" class="img-socia1" alt="Sarah Maria Borges Lopes" />
+        <p class="nome">Sarah Maria Borges Lopes</p>
+        <p class="oab">OAB: 5699622</p>
+      </a>
+    </div>
+    <div class="retangulo-socia">
+      <a href="#" class="foto-socia" data-socia="clarissa">
+        <img src="/img/Clarissa.png" class="img-socia1" alt="Clarissa Ribeiro de Faria" />
+        <p class="nome">Clarissa Ribeiro de Faria</p>
+        <p class="oab">OAB: 198809</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Modal -->
+    <div id="modal-socia" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <img id="modal-img" src="" alt="Foto da Sócia" />
+          <div class="modal-info">
+            <h2 id="modal-name">Nome da Sócia</h2>
+            <p id="modal-title">Cargo</p>
+          </div>
+        </div>
+        <div id="modal-curriculo">
+          <p>Currículo aqui...</p>
+        </div>
+      </div>
+    </div>
+    <script src="java.js"></script>
+
+    <footer class="footer-container">
+      <div class="background-blur"></div>
+      <div class="green-circle"></div>
+      <div class="blue-circle"></div>
+      <div class="divider"></div>
+  
+      <div class="footer-content">
+        <div class="company-info">
+          <img src="/img/Marca d'agua-072.PNG" alt="Transparent Logo" class="logofoot">
+          <p class="faq-description">
+            Atuação ética e comprometida com a garantia de seus direitos.          
+          </p>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+          <div class="icon">
+            <a href="https://wa.me/034998189790" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/lopesribeiroadv/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="lopesribeiroassessoriaadv@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div class="links-section">
+            <h3>Company</h3>
+            <a href="/index.html">Home</a>
+            <a href="/areas.html">Áreas de Atuação</a>
+            <a href="/quemsomos.html">Quem Somos</a>
+            <a href="/contato.html">Contato</a>
+          </div>
+          
+          <div class="links-section">
+            <h3>Links</h3>
+            <a href="https://www4.planalto.gov.br/legislacao/" target="_blank">Portal de Legislação</a>
+            <a href="https://www.tjmg.jus.br/portal-tjmg/" target="_blank">Tribunal de Justiça - MG</a>
+            <a href="https://tst.jus.br/" target="_blank">Tribunal Superior do Trabalho - TST</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
