@@ -431,7 +431,7 @@ header.masthead h1, header.masthead .h1 {
   object-fit: cover; /* Garante que a imagem mantenha proporção sem distorção */
   border-radius: 0; /* Remove bordas arredondadas */
   box-shadow: 0px 0px 10px #0000007c; /* Mantém a sombra */
-  object-position: center 100px;
+  object-position: center 120px;
 }
 
 .text-content {
@@ -1615,12 +1615,13 @@ form button:hover {
 }
 
 .sobre02 {
-  height: 400px; /* Ajuste na altura da imagem */
-  width: 350px; /* Ajuste na largura da imagem */
+  height: 95%; /* Ajuste na altura da imagem */
+  width: 400px; /* Ajuste na largura da imagem */
   border: 2px solid #e0e0e0;
   overflow: hidden;
   box-shadow: 0px 0px 10px #0000007c;
   object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+  
 }
 
 /* Seção 3 - Quem Somos (Sócias) */
