@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
@@ -753,8 +752,8 @@ iframe {
 
 .footer-links {
   display: flex;
-  gap: 120px;
-  
+  gap: 80px;
+
 }
 
 .links-section {
@@ -789,15 +788,15 @@ iframe {
 /* --- Responsividade --- */
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column; /* Alinha tudo em uma coluna */
-    align-items: center; /* Centraliza os itens */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 20px; /* Reduz espaço entre itens */
+    gap: 20px;
     padding: 20px;
   }
 
   .footer-links {
-    gap: 60px; /* Diminui o espaço entre as seções */
+    gap: 80px;
   }
 
   .links-section {
@@ -1919,174 +1918,10 @@ form button:hover {
 
   .sobre02 {
     width: 100%;
-    height: 300px;
+    max-width: 350px;
   }
 
   /* Seção Sócias */
-  .retangulo-socia {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  /* Modal */
-  .modal-content {
-    width: 90%;
-    margin: 20px;
-  }
-
-  /* Container do Formulário */
-  .form-container {
-    flex-direction: column;
-    padding: 20px;
-    padding-top: 150px;
-  }
-
-  form {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .info-contato {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  /* Rodapé */
-  .footer-content {
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .footer-links {
-    gap: 40px;
-  }
-}
-
-/* Dispositivos Móveis Pequenos */
-@media (max-width: 480px) {
-  .titulo-areas {
-    font-size: 28px; /* Títulos menores */
-  }
-
-  .titulo-quemsomos-pg {
-    font-size: 28px;
-  }
-
-  .titulo-contato-index {
-    font-size: 28px;
-  }
-
-  .btn-xl {
-    padding: 1rem 1.75rem;
-    font-size: 0.8rem;
-  }
-
-  .social-icons {
-    margin-left: 15px;
-  }
-
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .titulo-dividido {
-    font-size: 2rem;
-    padding: 15px 25px;
-  }
-}
-
-/* Menu de Navegação */
-@media (max-width: 992px) {
-  #navPrincipal .navbar-collapse {
-    background-color: #751616;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-  #navPrincipal .navbar-nav .nav-item .nav-link {
-    color: white;
-    padding: 10px 15px;
-  }
-
-  .social-icons {
-    margin-top: 15px;
-  }
-}
-
-/* Ajustes responsivos para a página Quem Somos */
-@media (max-width: 768px) {
-  /* Ajustes da seção principal */
-  .section-sobre03 {
-    padding: 40px 20px; /* Reduz o padding nas laterais */
-  }
-
-  .titulo-section3 {
-    font-size: 28px; /* Reduz o tamanho do título */
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .logo-pequeno {
-    height: 50px;
-    margin: 10px auto;
-    display: block;
-  }
-
-  .text-pq {
-    padding: 0 15px; /* Adiciona espaço nas laterais */
-    margin: 15px 0; /* Ajusta as margens */
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-  }
-
-  /* Ajustes da seção História */
-  .section-sobre02 {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 20px;
-    gap: 30px;
-  }
-
-  .titulo-section2 {
-    font-size: 28px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .text-section2 {
-    width: 100%;
-    padding: 0 15px;
-    font-size: 16px;
-    text-align: justify;
-    margin-bottom: 30px;
-  }
-
-  .l3 {
-    margin: 20px auto;
-    width: 80px;
-  }
-
-  .sobre02 {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  /* Ajustes da seção Sócias */
-  .socias {
-    padding: 40px 20px;
-  }
-
-  .titulo-socias {
-    font-size: 28px;
-    padding: 20px;
-  }
-
   .retangulo-socia {
     width: 280px;
     height: 420px;
