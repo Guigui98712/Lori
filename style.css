@@ -1504,29 +1504,26 @@ form button:hover {
 .titulo-container {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-.titulo-section3 {
-  font-size: 2.5rem; /* Tamanho equilibrado */
-  color: #333; /* Cor escura para contraste */
-  margin: 0;
-  font-weight: 600; /* Peso médio para elegância */
-  font-family: "Playfair", serif;
-  letter-spacing: -0.5px; /* Espaçamento natural entre letras */
+  gap: 10px;
+  margin-right: 0;
 }
 
 .logo-pequeno {
-  height: 60px; /* Tamanho compacto */
+  height: 60px;
   width: auto;
-  opacity: 0.9; /* Leve transparência para suavizar */
-  transition: opacity 0.3s ease; /* Transição suave */
-  padding-left: 30px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  padding-left: 10px;
 }
 
-.logo-pequeno:hover {
-  opacity: 1; /* Efeito de destaque no hover */
+.titulo-section3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  margin-left: -20px;
+  font-weight: 600;
+  font-family: "Playfair", serif;
+  letter-spacing: -0.5px;
 }
 
 .l3 {
@@ -1577,7 +1574,7 @@ form button:hover {
 /* Seção 2 - HISTÓRIA */
 .section-sobre02 {
   display: flex;
-  height: 650px;
+  height: 600px;
   justify-content: center;
   align-items: center;
   padding: 0px 50px;
@@ -2191,4 +2188,9 @@ body {
   .section-sobre02 {
     padding: 40px 20px;
   }
-}
+}. l o g o - p e q u e n o   {   p a d d i n g - l e f t :   1 0 p x   ! i m p o r t a n t ;   } 
+ 
+ . t i t u l o - s e c t i o n 3   {   m a r g i n - l e f t :   - 2 0 p x   ! i m p o r t a n t ;   } 
+ 
+ . t i t u l o - c o n t a i n e r   {   m a r g i n - r i g h t :   0   ! i m p o r t a n t ;   }  
+ 
