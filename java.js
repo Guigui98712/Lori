@@ -61,10 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const cleanPhone = telefone.replace(/\D/g, '');
 
     // Número da empresa (substitua pelo número correto)
-    const companyPhoneNumber = '5516992788614';
+    const companyPhoneNumber = '5534998189790';
 
     // Mensagem formatada para o WhatsApp
-    const whatsappMessage = `Olá, meu nome é ${name}. Meu telefone é ${telefone}. O assunto é: ${assunto}. Aqui está minha mensagem: ${mensagem}`;
+    const whatsappMessage = `Olá! 👋
+
+Nome: ${name}
+Assunto: ${assunto}
+
+Mensagem:
+${mensagem}`;
 
     // Gera o link do WhatsApp
     const whatsappLink = `https://api.whatsapp.com/send?phone=${companyPhoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
@@ -112,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Advogada',
       curriculo: `
         <p>Graduada pela Faculdade de Direito de Franca em 2018;</p>
-        <p>Inscrita na OAB/MG 198.809;</p>
+        <p>Inscrita na OAB/MG: 198.809;</p>
         <p>Pós-Graduada em Direito Trabalhista e Previdenciário pela mesma instituição (FDF);</p>
         <p>Pós-Graduanda em Direito do Ordenamento, Urbanismo e do Ambiente pela Faculdade de Direito da Universidade de Coimbra.</p>
       `
@@ -123,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Advogada',
       curriculo: `
         <p>Graduada pela Universidade de Uberaba em 2022;</p>
-        <p>Inscrita na OAB/MG220.120;</p>
+        <p>Inscrita na OAB/MG: 220.120;</p>
         <p>Pós-Graduada em Direito do Agronegócio pelo Instituto Líbano.</p>
       `
     }
