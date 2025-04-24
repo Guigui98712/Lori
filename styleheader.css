@@ -8,10 +8,44 @@
   z-index: 10; /* Garante que o navbar ficará acima do conteúdo */
 }
 
+/* Estilos dos ícones sociais no header secundário */
+.navbar.nav-secondary .social-icons {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+.navbar.nav-secondary .social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #b99350;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.navbar.nav-secondary .social-icon:hover {
+  background-color: #730313;
+  transform: scale(1.15);
+}
+
+.navbar.nav-secondary .social-icon i {
+  font-size: 18px;
+  color: #ffffff;
+}
 
 /* Container principal */
+.navbar.nav-secondary .navbar-nav {
+  margin-right: auto;
+  margin-left: 0;
+  padding-right: 50px;
+}
 
 
 

@@ -82,6 +82,14 @@ h1, h2, h3, p {
   color: #212529;
 }
 
+#navPrincipal .navbar-nav {
+  margin-left: auto !important;
+  margin-right: 100px !important;
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 #navPrincipal .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -111,6 +119,12 @@ h1, h2, h3, p {
   
   #navPrincipal .navbar-brand:hover {
     color: #fff;
+  }
+  
+  #navPrincipal .navbar-nav {
+    margin-left: auto !important;
+    margin-right: 100px !important;
+    padding-right: 0;
   }
   
   #navPrincipal .navbar-nav .nav-item .nav-link {
@@ -195,7 +209,10 @@ header.masthead h1, header.masthead .h1 {
 .social-icons {
   display: flex; /* Mantém os ícones lado a lado */
   gap: 20px; /* Espaço entre as bolinhas */
-  margin-left: 30px;
+  position: absolute; /* Posicionamento absoluto */
+  right: 100px; /* Aumentada a distância da direita */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste fino da centralização vertical */
 }
 
 .social-icon {
@@ -234,8 +251,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 50px 10px;
   text-align: center;
   font-family: "Playfair", serif;
-  height: 750px;
-
+  min-height: 750px; /* Alterado de height para min-height */
 }
 
 .titulo-areas {
@@ -367,7 +383,13 @@ header.masthead h1, header.masthead .h1 {
 
 @media (max-width: 992px) {
   .grid-areas {
-    grid-template-columns: repeat(1fr); /* 1 colunas */
+    grid-template-columns: 1fr; /* Corrigido a sintaxe */
+    padding: 0px 50px; /* Ajustado o padding para telas menores */
+  }
+
+  .areas-atuacao {
+    min-height: auto;
+    padding: 40px 10px;
   }
 
   .titulo-areas {
@@ -377,8 +399,9 @@ header.masthead h1, header.masthead .h1 {
 
 @media (max-width: 768px) {
   .grid-areas {
-    grid-template-columns: 1fr; /* 1 coluna */
+    grid-template-columns: 1fr;
     gap: 15px;
+    padding: 0px 20px;
   }
 
   .area-item .icone {
@@ -387,17 +410,15 @@ header.masthead h1, header.masthead .h1 {
 
   .titulo-areas {
     font-size: 28px;
+    margin-bottom: 40px;
   }
-}
 
-@media (max-width: 768px) {
   .areas-atuacao {
-    height: auto; /* Altura automática para evitar sobreposição */
-    padding: 30px 10px; /* Reduz o padding em telas pequenas */
+    padding: 30px 10px;
   }
 
-  .grid-areas {
-    margin-bottom: 30px; /* Espaço extra abaixo das áreas */
+  .descricao {
+    font-size: 18px;
   }
 }
 
@@ -492,33 +513,33 @@ header.masthead h1, header.masthead .h1 {
   color: #ffffff;
 }
 
-* Responsividade */
+/* Responsividade */
 @media (max-width: 992px) {
   .quemsomos {
-    flex-direction: column; /* Layout em coluna em telas menores */
+    flex-direction: column;
     padding: 40px 20px;
   }
 
   .img-container, .text-content {
-    width: 100%; /* Ocupa toda a largura */
+    width: 100%;
   }
 
   .img-container {
-    height: 300px; /* Altura fixa para a imagem */
+    height: 300px;
     margin-bottom: 20px;
   }
 
   .titulo-quemsomos {
-    font-size: 32px; /* Tamanho menor para telas menores */
-    text-align: center; /* Centraliza o título */
+    font-size: 32px;
+    text-align: center;
   }
 
   .titulo0-comodities {
-    text-align: center; /* Centraliza o subtítulo */
+    text-align: center;
   }
 
   .botao1 {
-    align-self: center; /* Centraliza o botão */
+    align-self: center;
   }
 }
 
@@ -1078,53 +1099,21 @@ iframe {
   text-align: center; /* Centraliza o texto dentro do botão */
   transition: background-color 0.3s ease; /* Adiciona transição suave */
 }
-
-/* Responsividade */
 @media screen and (max-width: 768px) {
-  .grid-areas-pag {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 50px 20px;
-    margin-left: 0;
+  .container-areas {
+    margin-bottom: 100px; /* Ajusta o espaço em telas menores */
+  }
+  
+  .areas-section {
+    padding-top: 80px;
   }
 
-  .areas-lista {
-    flex: none;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .detalhamento-container {
-    flex: none;
-    width: 100%;
-  }
-
-  .detalhamento {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
+  .texto-detalhamento {
+    margin-bottom: 30px;
   }
 
   .imagem-detalhamento {
-    max-width: 90%;
-  }
-
-  .areas-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .areas-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .area {
-    width: 90%;
-    height: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -1507,7 +1496,7 @@ form button:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .logo-pequeno {
@@ -1515,14 +1504,14 @@ form button:hover {
   width: auto;
   opacity: 0.9;
   transition: opacity 0.3s ease;
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 
 .titulo-section3 {
   font-size: 2.5rem;
   color: #333;
   margin: 0;
-  margin-left: -20px;
+  margin-left: -20px !important;
   font-weight: 600;
   font-family: "Playfair", serif;
   letter-spacing: -0.5px;
@@ -1906,10 +1895,8 @@ form button:hover {
 
   /* Página Quem Somos */
   .section-sobre02 {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
     padding: 40px 20px;
+    gap: 30px;
   }
 
   .titulo-section2,
@@ -1919,7 +1906,12 @@ form button:hover {
 
   .sobre02 {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .l3 {
+    margin: 20px auto;
   }
 
   /* Seção Sócias */
@@ -2034,6 +2026,30 @@ form button:hover {
   .titulo-quemsomos-pg {
     margin-right: 0;
   }
+
+  .section-sobre02 {
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+    padding: 40px 20px;
+  }
+
+  .titulo-section2,
+  .text-section2 {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .sobre02 {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .l3 {
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2094,7 +2110,8 @@ form button:hover {
 
   .sobre02 {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
+    height: 400px;
   }
 
   /* Contato ajustes */
@@ -2192,12 +2209,4 @@ body {
   .section-sobre02 {
     padding: 40px 20px;
   }
-}. l o g o - p e q u e n o   {   p a d d i n g - l e f t :   1 0 p x   ! i m p o r t a n t ;   } 
- 
- . t i t u l o - s e c t i o n 3   {   m a r g i n - l e f t :   - 2 0 p x   ! i m p o r t a n t ;   } 
- 
- . t i t u l o - c o n t a i n e r   {   m a r g i n - r i g h t :   0   ! i m p o r t a n t ;   } 
- 
- . t i t u l o - c o n t a i n e r   {   m a r g i n - r i g h t :   - 2 0 p x   ! i m p o r t a n t ;   } 
- 
- 
+}
